@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Krishnaveni S | Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+/* GLOBAL */
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+body{scroll-behavior:smooth;color:#fff;}
+
+/* NAVBAR */
+nav{
+  position: fixed; top:0; left:0; width:100%;
+  display:flex; justify-content:space-between; align-items:center;
+  padding:15px 10%; background:rgba(0,0,0,0.6); backdrop-filter:blur(6px);
+  z-index:1000;
+}
+nav h3{font-size:22px;color:#ffd32a;}
+nav a{
+  color:#fff;margin-left:20px;text-decoration:none;font-weight:600;
+  transition:0.3s;
+}
+nav a:hover{color:#ffd32a;transform:scale(1.1);}
+
+/* HERO */
+.hero{
+  background:url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+  height:100vh; display:flex; align-items:center; justify-content:center; text-align:center;
+}
+.hero h1{font-size:50px; animation:fadeIn 1.5s ease;}
+.hero p{font-size:22px;margin-top:15px; animation:fadeIn 2s ease;}
+
+@keyframes fadeIn{
+  0%{opacity:0; transform:translateY(20px);}
+  100%{opacity:1; transform:translateY(0);}
+}
+
+/* SECTIONS */
+section{
+  min-height:100vh; padding:100px 10%; display:flex; flex-direction:column; justify-content:center;
+  position:relative; transition:0.6s ease;
+}
+section .overlay{
+  background:rgba(0,0,0,0.6); padding:25px; border-radius:10px;
+  backdrop-filter:blur(5px); box-shadow:0 0 15px #000a;
+}
+
+/* TITLES */
+h2{font-size:38px; margin-bottom:25px; color:#ffd32a; text-align:center;}
+h3{margin-top:15px; margin-bottom:10px; color:#ffdd59;}
+
+/* CARDS */
+.card{
+  background:rgba(255,255,255,0.12); padding:20px; margin:12px 0; border-radius:10px;
+  backdrop-filter:blur(5px); transition: transform 0.35s, box-shadow 0.35s;
+}
+.card:hover{
+  transform:scale(1.05);
+  box-shadow:0 0 20px #ffd32aa8;
+}
+
+/* LISTS */
+ul{list-style:circle; padding-left:20px; line-height:1.7;}
+
+/* FOOTER */
+footer{background:#000;padding:15px;text-align:center;color:#ccc;font-size:14px;}
+
+/* PARALLAX BACKGROUNDS */
+.bg1{background:url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat; background-attachment:fixed;}
+.bg2{background:url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat; background-attachment:fixed;}
+.bg3{background:url('https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat; background-attachment:fixed;}
+.bg4{background:url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat; background-attachment:fixed;}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <h3>Krishnaveni S</h3>
+  <div>
+    <a href="#home">Home</a>
+    <a href="#objective">Objective</a>
+    <a href="#education">Education</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div>
+    <h1>Hello, I'm <span style="color:#ffd369;">Krishnaveni</span></h1>
+    <p>Aspiring Software Developer | MSc Computer Science</p>
+  </div>
+</section>
+
+<!-- OBJECTIVE -->
+<section class="bg1" id="objective">
+  <div class="overlay">
+    <h2>Career Objective</h2>
+    <p>To pursue a challenging career and be part of a progressive organization that enhances my technical and professional skills and allows me to contribute meaningfully in computing and software development.</p>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="bg2" id="education">
+  <div class="overlay">
+    <h2>Education</h2>
+    <div class="card">NGM College – MSc Computer Science (Pursuing) – 84%</div>
+    <div class="card">SNMV College – BSc Computer Science – 85%</div>
+    <div class="card">Vivek Vidyalaya – HSC – 86% | SSLC – 94%</div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="bg3" id="experience">
+  <div class="overlay">
+    <h2>Work Experience</h2>
+    <div class="card">
+      <strong>Accenture Solutions Pvt Ltd (2023–2024)</strong>
+      <ul>
+        <li>Power Platform Infrastructure – Low code / no code</li>
+        <li>Hands-on with PowerApps & Power Automate</li>
+        <li>10 Months experience in corporate environment</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="bg4" id="projects">
+  <div class="overlay">
+    <h2>Academic Projects</h2>
+    <div class="card">
+      <h3>Restaurant Management System</h3>
+      <p>Software to manage billing, menu, and reports efficiently.</p>
+    </div>
+    <div class="card">
+      <h3>Expense Tracker System</h3>
+      <p>Web app for monitoring personal expenses and financial awareness.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="bg1" id="skills">
+  <div class="overlay">
+    <h2>Skills & Certifications</h2>
+    <ul>
+      <li>Programming: C, C++, Java, Python, SQL, HTML</li>
+      <li>Tools: Power Platform, MS Office</li>
+      <li>Certifications: Google Digital Marketing, Java, Python DS, Cybersecurity</li>
+    </ul>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="bg2" id="contact">
+  <div class="overlay">
+    <h2>Contact Me</h2>
+    <p>📍 28-Thiruneelakandar St, Bagavathipalayam, Kinathukadavu, Coimbatore-642109</p>
+    <p>📱 +91 88257 24870</p>
+    <p>📧 krishuaug23@gmail.com</p>
+  </div>
+</section>
+
+<footer>
+  © 2026 Krishnaveni S | Interactive Portfolio
+</footer>
+
+</body>
+</html>
